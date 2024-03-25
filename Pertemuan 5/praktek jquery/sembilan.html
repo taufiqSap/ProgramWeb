@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styleTable.css"/>
+        <script src="jquery-3.7.1.js"></script>
+        <script>
+            $(document).ready(function() {
+              $(".add-row").click(function() {
+                // Get the values from the previous row's input fields
+                var name = $("#name").val();
+                var email = $("#email").val();
+      
+                // Create a new row using HTML markup
+                var markup = "<tr>";
+                markup += "<td><input type='checkbox' name='record'></td>";
+                markup += "<td>" + name + "</td>";
+                markup += "<td>" + email + "</td>";
+                markup += "</tr>";
+      
+                // Append the new row to the table body
+                $("table tbody").append(markup);
+      
+                // Clear the input fields for the next row
+                $("#name").val("");
+                $("#email").val("");
+              });
+      
+              // Delete row functionality (assuming it's required)
+              $(".delete-row").click(function() {
+                $("table tbody").find('input[name="record"]').each(function() {
+                  if ($(this).is(":checked")) {
+                    $(this).parents("tr").remove();
+                  }
+                });
+              });
+            });
+        </script>
+      </head>
+      <body>
+        <form>
+          <input type="text" id="name" placeholder="Name">
+          <input type="text" id="email" placeholder="Email Address">
+          <input type="button" class="add-row" value="Add Row">
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>Select</th>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            </tbody>
+        </table>
+        <button type="button" class="delete-row">Delete Row</button>
+      </body>
+    </html>
