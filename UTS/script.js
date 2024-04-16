@@ -6,17 +6,17 @@ let lastNameInput = $("#last-name-input");
 let lastNameError = $("#last-name-error");
 let emptyLastNameError = $("#empty-last-name-input");
 
-let playerNameInput = $("#player-name-input");
-let playerNameError = $("#player-name-error");
-let emptyPlayerNameError = $("#empty-player-name-input");
+let emailInput = $("#email-name-input");
+let emailError = $("#email--error");
+let emptyemailNameError = $("#empty-email-input");
 
-let phoneInput = $("#phone");
+let phoneInput = $("#phone-input");
 let phoneError = $("#phone-error");
 let emptyPhoneError = $("#empty-phone-input");
 
-let provinsiInput = $("#provinsi-name-input");
-let provinsiError = $("#provinsi-name-error");
-let emptyProvinsiError = $("#empty-provinsi-name-input");
+let alamatInput = $("#alamat-input");
+let alamatError = $("#alamat-error");
+let emptyalamatError = $("#empty-alamat-input");
 
 let submitButton = $("#submit-button");
 
