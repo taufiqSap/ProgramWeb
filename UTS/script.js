@@ -8,7 +8,7 @@ let emptyLastNameError = $("#empty-last-name-input");
 
 let emailInput = $("#email-name-input");
 let emailError = $("#email--error");
-let emptyemailNameError = $("#empty-email-input");
+let emptyemailError = $("#empty-email-input");
 
 let phoneInput = $("#phone-input");
 let phoneError = $("#phone-error");
