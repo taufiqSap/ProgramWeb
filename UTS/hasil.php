@@ -3,9 +3,6 @@ session_start();
 
 if (isset($_SESSION['data_pendaftaran'])) {
   $data_pendaftaran = $_SESSION['data_pendaftaran'];
-} else {
-  header("Location: index.php");
-  exit;
 }
 ?>
 
