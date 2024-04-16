@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-image: linear-gradient(to right,#004a76, #00818d, #00b56c );
+}
+/* Tambahkan properti berikut untuk menengahkan kotak putih */
+.container {
+    width: 90vw;
+    max-width: 600px;
+    padding: 2em 1.5em;
+    background-color: #ffffff;
+    margin: 1em auto;
+    border-radius: 0.5em;
+    /* Menengahkan kotak putih */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h4{
+font-size: 1.5em;
+}

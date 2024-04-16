@@ -8,17 +8,17 @@ let lastNameInput = document.getElementById( "last-name-input" );
 let lastNameError = document.getElementById( "last-name-error" );
 let emptylastNameError = document.getElementById( "empty-last-name-input" );
 
-let palyernameInput = document.getElementById( "player-name-input" );
-let playerNameError = document.getElementById( "player-name-error" );
-let emptyPlayerNameError = document.getElementById( "empty-player-name-input" );
+let emailInput = document.getElementById( "email-input" );
+let emailError = document.getElementById( "email-error" );
+let emptyemailError = document.getElementById( "empty-email-input" );
 
 let phoneInput = document.getElementById( "phone" );
 let phoneError = document.getElementById( "phone-error" );
 let emptyPhoneError = document.getElementById( "empty-phone-input" );
 
-let provinsiInput = document.getElementById( "provinsi-name-input" );
-let provinsiError = document.getElementById( "provinsi-name-error" );
-let emptyProvinsiError = document.getElementById( "empty-provinsi-name-input" );
+let alamatInput = document.getElementById( "alamat-input" );
+let alamatError = document.getElementById( "alamat-error" );
+let emptyalamatError = document.getElementById( "empty-alamat-input" );
 
 let submitButton=document.getElementById("submit-button");
 
