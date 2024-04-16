@@ -7,7 +7,7 @@
 body{
     background-image: linear-gradient(to right,#004a76, #00818d, #00b56c );
 }
-/* Tambahkan properti berikut untuk menengahkan kotak putih */
+
 .container {
     width: 90vw;
     max-width: 600px;
@@ -15,7 +15,7 @@ body{
     background-color: #ffffff;
     margin: 1em auto;
     border-radius: 0.5em;
-    /* Menengahkan kotak putih */
+    
     display: flex;
     flex-direction: column;
     justify-content: center;

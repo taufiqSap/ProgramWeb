@@ -19,8 +19,7 @@ if (isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['e
 
   $_SESSION['pesan_flash'] = "Pendaftaran berhasil!";
 
-  // Set a cookie that expires in 1 hour
-  setcookie("registration_success", "1", time() + 3600, "/"); // "/" means the cookie is available throughout the website
+  setcookie("registration_success", "1", time() + 3600, "/"); 
 
   header("Location: hasil.php");
   exit;
@@ -39,17 +38,17 @@ if (isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['e
     <div class="container">
         <?php
           if (isset($_COOKIE['registration_success']) && $_COOKIE['registration_success'] == "1") {
-            echo "<p>Thank you for registering. Your registration was successful!</p>";
+            echo "<p>Terima Kasih telah mendaftar! dan selamat bergabung</p>";
         }
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // Form submitted, process the data
+            
             $first_name = $_POST["first_name"];
             $last_name = $_POST["last_name"];
             $email = $_POST["email"];
             $phone = $_POST["phone"];
             $alamat = $_POST["alamat"];
 
-            // Display submission message and submitted data
+      
             echo "<h4>Selamat Anda telah bergabung sebagai member senam!</h4>";
             echo "<h4>Data Pendaftaran Anda:</h4>";
             echo "<p>Nama Depan: $first_name</p>";
@@ -58,7 +57,7 @@ if (isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['e
             echo "<p>No Hp: $phone</p>";
             echo "<p>Alamat: $alamat</p>";
         } else {
-            // Display the registration form
+        
             echo '<form method="post" autocomplete="off">';
             echo '<h4>Pendaftaran Member Senam</h4>';
             echo '<div class="input-selection">';
