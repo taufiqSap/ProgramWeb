@@ -1,31 +1,30 @@
-const { readyException } = require("jquery");
+let firstNameInput = $("#first-name-input");
+let firstNameError = $("#first-name-error");
+let emptyFirstNameError = $("#empty-first-name-input");
 
-let firstNameInput = document.getElementById( "first-name-input" );
-let firstNameError = document.getElementById( "last-name-error" );
-let emptyFirstNameError = document.getElementById( "empty-first-name-input" );
+let lastNameInput = $("#last-name-input");
+let lastNameError = $("#last-name-error");
+let emptyLastNameError = $("#empty-last-name-input");
 
-let lastNameInput = document.getElementById( "last-name-input" );
-let lastNameError = document.getElementById( "last-name-error" );
-let emptylastNameError = document.getElementById( "empty-last-name-input" );
+let playerNameInput = $("#player-name-input");
+let playerNameError = $("#player-name-error");
+let emptyPlayerNameError = $("#empty-player-name-input");
 
-let emailInput = document.getElementById( "email-input" );
-let emailError = document.getElementById( "email-error" );
-let emptyemailError = document.getElementById( "empty-email-input" );
+let phoneInput = $("#phone");
+let phoneError = $("#phone-error");
+let emptyPhoneError = $("#empty-phone-input");
 
-let phoneInput = document.getElementById( "phone" );
-let phoneError = document.getElementById( "phone-error" );
-let emptyPhoneError = document.getElementById( "empty-phone-input" );
+let provinsiInput = $("#provinsi-name-input");
+let provinsiError = $("#provinsi-name-error");
+let emptyProvinsiError = $("#empty-provinsi-name-input");
 
-let alamatInput = document.getElementById( "alamat-input" );
-let alamatError = document.getElementById( "alamat-error" );
-let emptyalamatError = document.getElementById( "empty-alamat-input" );
+let submitButton = $("#submit-button");
 
-let submitButton=document.getElementById("submit-button");
+let validClasses = $("#valid");
+let invalidClasses = $("#error");
 
-let validClasses = document.getElementById("valid");
-let invalidClasses = document.getElementById("error");
-
-
-
-
-
+$(document).ready(function() {
+    $('#show-barcode-button').click(function() {
+        $('.barcode').slideToggle(1000);
+    });
+});

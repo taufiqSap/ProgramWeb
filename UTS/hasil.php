@@ -28,8 +28,11 @@ if (isset($_SESSION['data_pendaftaran'])) {
     <h2>Mohon untuk bergabung di grup WA</h2>
     <a href="https://senamSehat.whatsapp.com/">https://senamSehat.whatsapp.com/</a>
     <p>Screenshoot dan print QRcode!</p>
-    <img src="barcode.png">
-    <a>Scan qrcode saat memasuki ruang senam</a>
-  </div> </body>
+    <button id="show-barcode-button">Tampilkan barcode</button>
+    <img class="barcode" src="barcode.png" style="display: none;">
+    <a class="barcode" style="display: none;">Scan qrcode saat memasuki ruang senam</a>
+  </div> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
-

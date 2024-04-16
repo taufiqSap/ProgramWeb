@@ -19,10 +19,12 @@ if (isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['e
 
   $_SESSION['pesan_flash'] = "Pendaftaran berhasil!";
 
+  // Set a cookie that expires in 1 hour
+  setcookie("registration_success", "1", time() + 3600, "/"); // "/" means the cookie is available throughout the website
+
   header("Location: hasil.php");
   exit;
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +38,9 @@ if (isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['e
 <body>
     <div class="container">
         <?php
+          if (isset($_COOKIE['registration_success']) && $_COOKIE['registration_success'] == "1") {
+            echo "<p>Thank you for registering. Your registration was successful!</p>";
+        }
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Form submitted, process the data
             $first_name = $_POST["first_name"];
