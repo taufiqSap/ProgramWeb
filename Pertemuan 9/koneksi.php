@@ -3,7 +3,7 @@
 $namaHost = "localhost"; //nama host dari MySql
 $username = "root"; // username/nama pengguna MySql
 $password = ""; // password (biasanya kosong)
-$database = "prakwebdb"; // Nama dari database yang digunakan
+$database = "pratikumdb"; // Nama dari database yang digunakan
 
 
 
